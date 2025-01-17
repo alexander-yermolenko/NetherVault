@@ -1,0 +1,99 @@
+[
+  {
+    "name": "VIP",
+    "price": "$5.00",
+    "commands": ["/fly", "/heal", "/feed", "/hat"],
+    "kit": [
+      "Diamond Sword (Sharpness I)",
+      "Diamond Pickaxe (Efficiency I)",
+      "Diamond Armor Set (Protection I)",
+      "16 Steak",
+      "32 Torches"
+    ]
+  },
+  {
+    "name": "VIP+",
+    "price": "$10.00",
+    "commands": [
+      "All VIP Commands",
+      "/nick",
+      "/workbench",
+      "/echest",
+      "/ptime"
+    ],
+    "kit": [
+      "Diamond Sword (Sharpness II, Unbreaking I)",
+      "Diamond Pickaxe (Efficiency II, Unbreaking I)",
+      "Diamond Armor Set (Protection II)",
+      "32 Steak",
+      "64 Torches",
+      "10 Ender Pearls"
+    ]
+  },
+  {
+    "name": "MVP",
+    "price": "$15.00",
+    "commands": [
+      "All VIP+ Commands",
+      "/disguise",
+      "/repair",
+      "/vanish",
+      "/back"
+    ],
+    "kit": [
+      "Diamond Sword (Sharpness III, Unbreaking II)",
+      "Diamond Pickaxe (Efficiency III, Unbreaking II)",
+      "Diamond Armor Set (Protection III)",
+      "64 Steak",
+      "64 Torches",
+      "20 Ender Pearls",
+      "5 Golden Apples"
+    ]
+  },
+  {
+    "name": "MVP+",
+    "price": "$25.00",
+    "commands": [
+      "All MVP Commands",
+      "/flyspeed",
+      "/tpahere",
+      "/near",
+      "/god",
+      "/setwarp"
+    ],
+    "kit": [
+      "Diamond Sword (Sharpness IV, Unbreaking III)",
+      "Diamond Pickaxe (Efficiency IV, Unbreaking III)",
+      "Diamond Armor Set (Protection IV)",
+      "64 Steak",
+      "64 Torches",
+      "32 Ender Pearls",
+      "10 Golden Apples",
+      "Elytra (Wings for flying)"
+    ]
+  },
+  {
+    "name": "MVP++",
+    "price": "$50.00",
+    "commands": [
+      "All MVP+ Commands",
+      "/thru",
+      "/worldedit",
+      "/speed",
+      "/socialspy",
+      "/broadcast"
+    ],
+    "kit": [
+      "Diamond Sword (Sharpness V, Unbreaking III, Fire Aspect II)",
+      "Diamond Pickaxe (Efficiency V, Unbreaking III)",
+      "Diamond Armor Set (Protection V, Unbreaking III)",
+      "64 Steak",
+      "64 Torches",
+      "64 Ender Pearls",
+      "20 Golden Apples",
+      "Elytra (Wings for flying)",
+      "Totem of Undying",
+      "10 Enchanted Golden Apples"
+    ]
+  }
+]

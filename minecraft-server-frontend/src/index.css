@@ -1,0 +1,17 @@
+/* Add the font-face rule */
+@font-face {
+  font-family: 'MinecraftBold';
+  src: url('./fonts/minecraft-font/MinecraftRegular-Bmg3.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: 'MinecraftBold', sans-serif;
+}
+
+/* Additional styles for other elements if needed */
+h1, h2, h3, h4, h5, h6, p, a, li, button, input {
+  font-family: 'MinecraftBold', sans-serif;
+}

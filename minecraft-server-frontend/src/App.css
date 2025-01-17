@@ -1,0 +1,102 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #1e1e1e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Layout */
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Main content takes up remaining space */
+  background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 70px 125px auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+  .app-layout {
+    flex-direction: column;
+  }
+
+  main {
+    order: 3;
+    margin: 20px;
+
+  }
+
+}
+
+/* App Popup Styles */
+.app-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.app-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Close button styles */
+.app-popup button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.app-popup button:hover {
+  background-color: #218838;
+}
+
+/* Disable scrolling when popup is open */
+.no-scroll {
+  overflow: hidden;
+}

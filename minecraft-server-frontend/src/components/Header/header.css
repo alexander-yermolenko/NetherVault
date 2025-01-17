@@ -1,0 +1,164 @@
+.header {
+    background-color: black;
+    padding: 10px 20px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: flex;
+    justify-content: center; /* Center the entire content */
+    align-items: center;
+    position: relative; /* Relative positioning for absolute elements */
+    color: white;
+}
+
+.server-info {
+    font-size: 1.5rem; /* Initial larger font size */
+    color: white;
+    position: absolute;
+    left: 20px; /* Position server info on the left */
+}
+
+.server-info button {
+    font-family: 'MinecraftBold', sans-serif; /* Minecraft font style */
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit; /* Inherit font size from .server-info */
+}
+
+.server-info button:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.discord-link {
+    font-family: 'MinecraftBold', sans-serif; /* Minecraft font style */
+    font-size: 1.5rem; /* Make the text larger */
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 20px; /* Position Discord link on the right */
+}
+
+.discord-link:hover {
+    text-decoration: underline;
+}
+
+/* Minecraft style for text */
+.minecraft-text {
+    font-family: 'MinecraftBold', sans-serif;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #FFFFFF; /* White color for the text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+}
+
+/* Pop-up Window */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    text-align: center;
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup p {
+    font-family: 'MinecraftBold', sans-serif;
+    font-size: 1.2rem; /* Adjust the size as needed */
+    color: #2c3e50;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+    margin-bottom: 20px;
+}
+
+.popup button {
+    font-family: 'MinecraftBold', sans-serif;
+    padding: 5px 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #218838;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* Disable scrolling when popup is open */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 1500px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        border-left: none;
+        border-right: none;
+    }
+
+    .server-info, .discord-link {
+        position: static; /* Reset positioning for mobile */
+        order: 1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 1rem; /* Set a base font size for mobile */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncated text */
+    }
+
+    .logo-container {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .logo {
+        width: 175px;
+    }
+}

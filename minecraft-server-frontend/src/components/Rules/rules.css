@@ -1,0 +1,14 @@
+/* Rules Styles */
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensure full-width children */
+    justify-content: flex-start; /* Align everything at the top */
+    height: auto;
+    padding: 20px; /* Add padding around the form */
+    box-sizing: border-box; /* Include padding in element width/height calculations */
+}
+
+h1 {
+    text-align: center;
+}

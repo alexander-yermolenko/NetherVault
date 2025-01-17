@@ -1,0 +1,56 @@
+.basket-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.basket-container h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.basket-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.basket-container li {
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-container li button {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.basket-container li button:hover {
+    background-color: #c0392b;
+}
+
+.checkout-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #2980b9;
+}
